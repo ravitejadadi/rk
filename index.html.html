@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RK Overseas Education - Your Journey to Becoming a Doctor</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <header class="main-header">
+        <div class="container header-content">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751267721/logo_u7egun.jpg" alt="RK Overseas Education Logo">
+            </div>
+            <button class="hamburger-menu" aria-label="Toggle navigation menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#mbbs-abroad">MBBS Abroad</a></li>
+                    <li><a href="#universities">Universities</a></li>
+                    <li><a href="#students">Student Stories</a></li>
+                    <li><a href="#contact-page">Contact Us</a></li>
+                    <li><a href="#" data-page="budget-calculator-page">Budget Calculator</a></li>
+                    <li><a href="#" data-page="fmge-pass-percentage-page">FMGE Pass Percentage</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="new-hero-section" id="home">
+            <div class="container new-hero-content">
+                <h1>From Dreams to Doctor – Your Journey Begins Here</h1>
+                <p class="subtitle">
+                    Each year thousands of Indian students go abroad to pursue their dream of becoming a Doctor. Find Medical universities abroad, talk
+                    to Indian students directly and get one step closer to achieve your dream.
+                </p>
+
+                <div class="initial-buttons">
+                    <button class="btn btn-primary btn-explore">Explore MBBS Destinations</button>
+                    <button class="btn btn-secondary btn-mentor">Talk to a Student Mentor</button>
+                </div>
+
+                <div class="step-form-container">
+                    <div class="form-steps">
+                        <div class="step-group">
+                            <label for="step1CountrySelect">Which country do you want to study?</label>
+                            <div class="custom-select-wrapper">
+                                <i class="fas fa-globe"></i>
+                                <select id="step1CountrySelect" class="custom-select">
+                                    <option value="">Select Country</option>
+                                    <option value="Russian Federation">Russia</option>
+                                    <option value="Uzbekistan">Uzbekistan</option>
+                                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                    <option value="Georgia">Georgia</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="step-group">
+                            <label for="step2BudgetRange">What is your budget (Course Fee/Year)?</label>
+                            <div class="range-slider-container">
+                                <input type="range" id="step2BudgetRange" class="range-slider" min="200000" max="1000000" value="500000">
+                                <div class="budget-labels">
+                                    <span id="minBudget">₹2Lakhs</span> <!-- This will be updated by JS to show current value -->
+                                    <span id="maxBudget">₹10Lakhs</span> <!-- This will remain static, showing max range -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-submit-form" id="showMatchingUniversitiesBtn">Search</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="trusted-section">
+            <div class="container">
+                <h2>Why RK Overseas is Trusted by 1000+ Indian Students</h2>
+                <div class="trusted-features">
+                    <div class="feature-item">
+                        <i class="fas fa-brain"></i>
+                        <span>Expert Counselling</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-plane-departure"></i>
+                        <span>Airport to Hostel Support</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-scroll"></i>
+                        <span>Guaranteed Admission</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-handshake"></i>
+                        <span>Friendly students cum staff</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-briefcase-medical"></i>
+                        <span>MCI/NMC Eligibility Support</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="students-like-you" id="students">
+            <div class="container">
+                <h2>Students Just Like You, who have started their MBBS Journey</h2>
+                <div class="image-grid">
+                    <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751387785/Screenshot_2025-06-30-19-58-28-36_965bbf4d18d205f782c6b8409c5773a4_ymwvcc.jpg" alt="Student Group 1">
+                    <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751387785/IMG-20250630-WA0022_ticfev.jpg" alt="Student Group 2">
+                    <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751387785/IMG-20250630-WA0017_ii6z3n.jpg" alt="Student Group 3">
+                    <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751387785/IMG-20250630-WA0020_eanwvo.jpg" alt="Student Group 4">
+                    <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751387784/Screenshot_2025-06-30-19-57-20-83_965bbf4d18d205f782c6b8409c5773a4_shgjle.jpg" alt="Student Group 5">
+                    <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751387784/Screenshot_2025-06-30-19-55-18-95_965bbf4d18d205f782c6b8409c5773a4_z4ziew.jpg" alt="Student Group 6">
+                    <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751387786/Screenshot_2025-06-30-19-54-31-63_965bbf4d18d205f782c6b8409c5773a4_nsf9st.jpg" alt="Student Group 7">
+                    <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751387784/Screenshot_2025-06-30-19-57-01-13_965bbf4d18d205f782c6b8409c5773a4_pwuca3.jpg" alt="Student Group 8">
+                    <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751389423/WhatsApp_Image_2025-06-30_at_20.04.45_bb6c7265_ectwls.jpg" alt="Student Group 9">
+                </div>
+            </div>
+        </section>
+
+        <section class="other-universities-search">
+            <div class="container">
+                <h3>Are you looking for any other Universities?</h3>
+                <div class="input-fields-row">
+                    <div class="input-group">
+                        <label for="otherUniversitySelect">Which university are you looking for?</label>
+                        <div class="custom-select-wrapper">
+                            <i class="fas fa-university"></i> <select id="otherUniversitySelect" class="custom-select">
+                                <option value="">Select University</option>
+                                <optgroup label="Russia">
+                                    <option value="Volgograd State Medical University">Volgograd State Medical University</option>
+                                    <option value="Immanuel Kant Baltic Federal University">Immanuel Kant Baltic Federal University</option>
+                                    <option value="Kazan State Medical University">Kazan State Medical University</option>
+                                    <option value="Chechen State University">Chechen State University</option>
+                                    <option value="Orel State Medical University">Orel State Medical University</option>
+                                    <option value="Mephi">MEPhI</option>
+                                    <option value="Kursk State Medical University">Kursk State Medical University</option>
+                                    <option value="Kabardino-Balkarian State University">Kabardino-Balkarian State Medical University</option>
+                                </optgroup>
+                                <optgroup label="Uzbekistan">
+                                    <option value="Tashkent State Medical University">Tashkent State Medical University</option>
+                                    <option value="Urgench State Medical University">Urgench State Medical University</option>
+                                    <option value="Bukhara State Medical University">Bukhara State Medical University</option>
+                                    <option value="Samarkand State Medical University">Samarkand State Medical University</option>
+                                </optgroup>
+                                <optgroup label="Georgia">
+                                    <option value="Tbilisi State Medical University">Tbilisi State Medical University</option>
+                                    <option value="Georgian National University SEU">Georgian National University SEU</option>
+                                    <option value="Batumi Shota Rustaveli State University">Batumi Shota Rustaveli State Medical University</option>
+                                    <option value="Alte University">Alte University</option>
+                                </optgroup>
+                                <optgroup label="Kyrgyzstan">
+                                    <option value="Osh State Medical University">Osh State Medical University</option>
+                                    <option value="Jalal-Abad State University">Jalal-Abad State University</option>
+                                    <option value="Jalal-Abad International University">Jalal-Abad International University</option>
+                                    <option value="International Medical University">International Medical University</option>
+                                    <option value="Kyrgyz State Medical Academy">Kyrgyz State Medical Academy</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="otherBudgetSelect">What is your budget (Course Fee/Year)?</label>
+                        <div class="custom-select-wrapper">
+                            <i class="fas fa-rupee-sign"></i> <select id="otherBudgetSelect" class="custom-select">
+                                <option value="">Select Budget</option>
+                                <option value="2-5">2-5 Lakhs</option>
+                                <option value="5-8">5-8 Lakhs</option>
+                                <option value="8-10">8-10 Lakhs</option>
+                                <option value="10+">10+ Lakhs</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <button class="btn btn-search">Search University</button>
+            </div>
+        </section>
+
+        <section class="top-universities" id="universities">
+            <div class="container">
+                <h2>Top Universities for MBBS in Uzbekistan</h2>
+                <div class="universities-carousel">
+                    <!-- This is now a grid, not a carousel -->
+                    <!-- Uzbekistan Universities - Reordered as per request -->
+                    <div class="university-card">
+                        <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751277473/Second_Tashkent_State_Medical_Institute_ls9aet.jpg" alt="Tashkent State Medical University">
+                        <h4>Tashkent State Medical University</h4>
+                        <p>Rank: #1 in Uzbekistan | Est: 1919</p>
+                        <p>Location: Tashkent, Uzbekistan</p>
+                    </div>
+                    <div class="university-card">
+                        <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751277700/7-35_f4x0wg.jpg" alt="Bukhara State Medical University">
+                        <h4>Bukhara State Medical University</h4>
+                        <p>Rank: #2 in Uzbekistan | Est: 1990</p>
+                        <p>Location: Bukhara, Uzbekistan</p>
+                    </div>
+                    <div class="university-card most-recommended">
+                        <!-- Added most-recommended class -->
+                        <img src="https://www.tutelagestudy.com/uploads/university/taskent-urgency_1749639047.jpg" alt="Urgench State Medical University">
+                        <h4>Urgench State Medical University</h4>
+                        <p>Rank: #3 in Uzbekistan | Est: 1992</p>
+                        <p>Location: Urgench, Uzbekistan</p>
+                    </div>
+                    <div class="university-card">
+                        <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751277576/Campus_vYiO8Uzxk_hmtuup.webp" alt="Samarkand State Medical University">
+                        <h4>Samarkand State Medical University</h4>
+                        <p>Rank: #4 in Uzbekistan | Est: 1930</p>
+                        <p>Location: Samarkand, Uzbekistan</p>
+                    </div>
+                    <div class="university-card">
+                        <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751278200/US3_amw9fr.png" alt="Andijan State Medical Institute">
+                        <h4>Andijan State Medical Institute</h4>
+                        <p>Rank: #5 in Uzbekistan | Est: 1955</p>
+                        <p>Location: Andijan, Uzbekistan</p>
+                    </div>
+                    <div class="university-card">
+                        <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751278314/bannervideo_gfymqn.webp" alt="Fergana Medical Institute of Public Health">
+                        <h4>Fergana Medical Institute of Public Health</h4>
+                        <p>Rank: #6 in Uzbekistan | Est: 1991</p>
+                        <p>Location: Fergana, Uzbekistan</p>
+                    </div>
+                    <!-- Removed Tashkent State Dental Institute as requested -->
+                </div>
+            </div>
+        </section>
+
+        <section class="founders-section">
+            <div class="container">
+                <h2>Meet Our Founders</h2>
+                <div class="founder-cards-container">
+                    <div class="founder-card">
+                        <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751562984/WhatsApp_Image_2025-07-01_at_23.37.45_a2f325a5_etcsfl.jpg" alt="Dr. Amit Choudhary">
+                        <h4>Dr. Amit Choudhary MBBS</h4>
+                        <p class="founder-title">Chief Mentor</p>
+                        <p class="founder-bio">A trusted guide and visionary, Dr. Amit Choudhary brings deep experience and insight to RK. As Chief Mentor, he plays a key role in shaping strategy, inspiring students, and guiding the team toward meaningful impact.</p>
+                        <div class="founder-social-links">
+                            <a href="https://www.instagram.com/iamitchoudhary027?igsh=MWN0Y2p4d2hoMmwyeg==" aria-label="LinkedIn"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="founder-card">
+                        <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751273200/sak_to5ryf.jpg" alt="Founder 1">
+                        <h4>Dr.Saksham Chahar MBBS</h4>
+                        <p class="founder-title">Founder</p>
+                        <p class="founder-bio">Dr.Saksham Chahar Founder is an ambitious MBBS doctor who is passionately helping fellow aspirants achieve their dream of becoming doctors by sharing guidance, tips, and his own journey.".</p>
+                        <div class="founder-social-links">
+                            <a href="https://www.instagram.com/_saksham27___?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" aria-label="LinkedIn"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="founder-card">
+                        <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751273200/josh_o5k55a.jpg" alt="Founder 2">
+                        <h4>Dr. Allwin Joshwa</h4>
+                        <p class="founder-title">Co-Founder</p>
+                        <p class="founder-bio">Allwin Joshwa, co-founder and MBBS student, is on a mission to guide and support fellow medical aspirants in achieving their dream of becoming doctors.</p>
+                        <div class="founder-social-links">
+                            <a href="https://www.instagram.com/allwin.joshwa_?igsh=MTF1emUzYWxrMGxkeQ==" aria-label="LinkedIn"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <!-- Added Dr. Amit Choudhary as requested -->
+
+                </div>
+            </div>
+        </section>
+
+        <section class="indian-students-connect" id="indian-students-connect">
+            <!-- Added ID here -->
+            <div class="container">
+                <h2>Connect with Indian students studying MBBS around the world</h2>
+                <div class="student-profiles-carousel-wrapper">
+                    <button class="student-carousel-nav-btn left"><i class="fas fa-chevron-left"></i></button>
+                    <div class="student-profiles-carousel">
+                        <div class="student-profile-card">
+                            <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751275377/somiyadelhi_w68ngn.jpg" alt="S.A.I.N">
+                            <h4>Dr.Sowmiya</h4>
+                            <div class="location-info">
+                            </div>
+                            <div class="location-info">
+                                <i class="fas fa-map-marker-alt" style="color: #666;"></i>
+                                <span>Delhi,India.</span>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-small btn-message">Message</button>
+                                <button class="btn btn-small btn-book-call">Book a call</button>
+                            </div>
+                        </div>
+                        <div class="student-profile-card">
+                            <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751563658/neela_f8dboe.jpg" alt="S.A.I.N">
+                            <h4>Dr.Neelaveni</h4>
+                            <div class="location-info">
+                            </div>
+                            <div class="location-info">
+                                <i class="fas fa-map-marker-alt" style="color: #666;"></i>
+                                <span>Tamilnadu,India.</span>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-small btn-message">Message</button>
+                                <button class="btn btn-small btn-book-call">Book a call</button>
+                            </div>
+                        </div>
+                        <div class="student-profile-card">
+                            <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751275573/Mehaboob_Karnataka_nsl9ar.jpg" alt="Ilya">
+                            <h4>Dr.Mehaboob</h4>
+                            <div class="location-info">
+                            </div>
+                            <div class="location-info">
+                                <i class="fas fa-map-marker-alt" style="color: #666;"></i>
+                                <span>Karnataka,India.</span>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-small btn-message">Message</button>
+                                <button class="btn btn-small btn-book-call">Book a call</button>
+                            </div>
+                        </div>
+                        <div class="student-profile-card">
+                            <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751275398/NavyaSreeHyd_fcazcm.jpg" alt="Meenakshi">
+                            <h4>Dr.NavyaSree</h4>
+                            <div class="location-info">
+                            </div>
+                            <div class="location-info">
+                                <i class="fas fa-map-marker-alt" style="color: #666;"></i>
+                                <span>Hyderabad,India.</span>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-small btn-message">Message</button>
+                                <button class="btn btn-small btn-book-call">Book a call</button>
+                            </div>
+                        </div>
+                        <div class="student-profile-card">
+                            <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751275537/Anush_Ragavendra_Tamilnadu_hgd06q.jpg" alt="Geethami">
+                            <h4>Dr.Anush Ragavendra</h4>
+                            <div class="location-info">
+                            </div>
+                            <div class="location-info">
+                                <i class="fas fa-map-marker-alt" style="color: #666;"></i>
+                                <span>Tamilnadu,India.</span>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-small btn-message">Message</button>
+                                <button class="btn btn-small btn-book-call">Book a call</button>
+                            </div>
+                        </div>
+                        <div class="student-profile-card">
+                            <img src="https://res.cloudinary.com/dpxcmzztu/image/upload/v1751275552/Shamyukta_Tamilnadu_c9oe38.jpg" alt="Rahul">
+                            <h4>Dr.Samyutha</h4>
+                            <div class="location-info">
+                            </div>
+                            <div class="location-info">
+                                <i class="fas fa-map-marker-alt" style="color: #666;"></i>
+                                <span>Tamilnadu,India</span>
+                            </div>
+                            <div class="card-buttons">
+                                <button class="btn btn-small btn-message">Message</button>
+                                <button class="btn btn-small btn-book-call">Book a call</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="student-carousel-nav-btn right"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="enquiry-form-section dark-background">
+            <div class="container form-container">
+                <h3>Book a Free Consultation with our Experts!</h3>
+                <form class="counselling-form" id="consultation-form">
+                    <!-- Added ID for specific targeting -->
+                    <div class="form-group">
+                        <label for="name2">Name:</label>
+                        <input type="text" id="name2" name="name" placeholder="Your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email2">Email:</label>
+                        <input type="email" id="email2" name="email" placeholder="Your professional email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone2">Phone:</label>
+                        <input type="tel" id="phone2" name="phone" placeholder="Your contact number" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="course2">Course of Interest:</label>
+                        <input type="text" id="course2" name="course" placeholder="e.g., MBBS, Dentistry" required>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Schedule Consultation</button>
+                </form>
+                <div style="text-align: center; margin-top: 30px; display: flex; flex-direction: column; gap: 15px;">
+                    <button class="btn btn-primary" id="getVisaTipsBtn">✨ Get Visa Interview Tips ✨</button>
+                    <button class="btn btn-secondary" id="getEssaySOPBtn">✨ Essay/SOP Assistant ✨</button>
+                    <button class="btn btn-primary" id="getPreDepartureChecklistBtn">✨ Pre-Departure Checklist ✨</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- MBBS Learn More Section (currently commented out in your HTML) -->
+        <!-- If you uncomment this, ensure its ID matches the nav link if applicable -->
+        <!-- <section class="mbbs-learn-more" id="mbbs-abroad">
+            <div class="container">
+                <h2>Want to learn more about MBBS abroad?</h2>
+                <div class="video-previews-grid">
+                    <div class="video-card">
+                        <img src="https://placehold.co/350x200/e0e0e0/333333?text=Video+1+Thumbnail" alt="Why MBBS Abroad?">
+                        <h4>Why Study MBBS Abroad?</h4>
+                        <p>Discover the benefits and opportunities.</p>
+                        <button class="btn btn-small">Watch Now</button>
+                    </div>
+                    <div class="video-card">
+                        <img src="https://placehold.co/350x200/e0e0e0/333333?text=Video+2+Thumbnail" alt="Student Testimonials">
+                        <h4>Success Stories: Student Testimonials</h4>
+                        <p>Hear directly from our successful alumni.</p>
+                        <button class="btn btn-small">Watch Now</button>
+                    </div>
+                    <div class="video-card">
+                        <img src="https://placehold.co/350x200/e0e0e0/333333?text=Video+3+Thumbnail" alt="Top Destination Countries">
+                        <h4>Top Destination Countries for MBBS</h4>
+                        <p>Explore the best countries for medical studies.</p>
+                        <button class="btn btn-small">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="contact-page" class="contact-page-section">
+            <div class="container">
+                <h2 class="contact-page-title">Get in Touch with RK Overseas Education</h2>
+                <div class="contact-content-wrapper">
+                    <div class="contact-form-column">
+                        <h3>Send us a Message</h3>
+                        <form class="contact-page-form counselling-form" id="main-contact-form">
+                            <!-- Added ID for specific targeting -->
+                            <div class="form-group">
+                                <label for="contactName">Your Name:</label>
+                                <input type="text" id="contactName" name="contactName" placeholder="Enter your full name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Your Email:</label>
+                                <input type="email" id="contactEmail" name="contactEmail" placeholder="Your email address" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactPhone">Your Phone Number:</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" placeholder="Your phone number">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactMessage">Your Message:</label>
+                                <textarea id="contactMessage" name="contactMessage" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-submit">Send Message</button>
+                        </form>
+                    </div>
+                    <div class="contact-info-column">
+                        <h3>Contact Details</h3>
+                        <div class="contact-info-block">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 6381139182</span>
+                        </div>
+                        <div class="contact-info-block">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 7014676798</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@rkoverseaseducation.com</span>
+                        </div>
+                    </div>
+                    <div class="location-info-block">
+                        <h4>Our Offices</h4>
+                        <div class="address-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kota</span>
+                        </div>
+                        <div class="address-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Jaipur</span>
+                        </div>
+                        <div class="address-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Banglore</span>
+                        </div>
+                        <div class="address-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Coimbatore</span>
+                        </div>
+                    </div>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.917637887309!2d76.3217036!3d10.000305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c5e7b4b1a41%3A0x6b7b6b7b6b7b6b7b!2sNippon%20Q1!5e0!3m2!1sen!2sin!4v1678901234567!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="budget-calculator-page" class="calculator-page" style="display: none;">
+            <div class="container">
+                <h2>Calculate your Budget</h2>
+                <div class="calculator-form-grid">
+                    <div class="input-group">
+                        <label for="tuitionFee">Tuition Fee</label>
+                        <input type="number" id="tuitionFee" placeholder="0" value="0">
+                        <span>(per year)</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="foodAccommodationTravel">Food, Accommodation & Travel</label>
+                        <input type="number" id="foodAccommodationTravel" placeholder="0" value="0">
+                        <span>(per month)</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="medicalInsuranceVisa">Medical Insurance, Visa</label>
+                        <input type="number" id="medicalInsuranceVisa" placeholder="0" value="0">
+                        <span>(per year)</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="airTicket">Air Ticket</label>
+                        <input type="number" id="airTicket" placeholder="0" value="0">
+                        <span>(per year)</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="applicationProcessingFee">Application Processing Fee</label>
+                        <input type="number" id="applicationProcessingFee" placeholder="0" value="0">
+                    </div>
+                    <div class="input-group">
+                        <label for="administrativeCharges">Administrative Charges (if any)</label>
+                        <input type="number" id="administrativeCharges" placeholder="0" value="0">
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="calculateBudgetBtn">Calculate</button>
+                <div class="calculation-result" style="margin-top: 30px; font-size: 1.2rem; font-weight: 600; color: var(--primary-color);">
+                    Estimated Annual Budget: ₹0
+                </div>
+            </div>
+        </section>
+
+        <section id="fmge-pass-percentage-page" class="fmge-page" style="display: none;">
+            <div class="container">
+                <h2>Get FMGE Pass Percentage</h2>
+                <div class="fmge-search-bar">
+                    <input type="text" id="fmgeSearch" placeholder="Search location, universities...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="fmge-filters">
+                    <div class="input-group">
+                        <label for="fmgeCountrySelect">Country</label>
+                        <select id="fmgeCountrySelect">
+                            <option value="">Select Country</option>
+                            <option value="Russian Federation">Russian Federation</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Georgia">Georgia</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="fmgeUniversitySelect">University</label>
+                        <select id="fmgeUniversitySelect">
+                            <option value="">Select University</option>
+                            <!-- Options will be populated by JS -->
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="getFmgePercentageBtn">Get FMGE Percentage</button>
+                <div class="fmge-results">
+                    <div class="results-legend">
+                        <span class="legend-item"><span class="color-box total-students"></span> No of Students Appeared</span>
+                        <span class="legend-item"><span class="color-box qualified-students"></span> No of Students Qualified</span>
+                    </div>
+                    <div class="fmge-cards-grid">
+                    </div>
+                    <div class="pagination">
+                    </div>
+                </div>
+                <div class="fmge-notes">
+                    <p># This includes candidates who were later declared ineligible after appearance in FMGE.</p>
+                    <p># Pass Percentage of Pakistan Universities may change with declaration of withheld result of some candidates.</p>
+                    <p>Note: The names of the University/Institute/College primary medical qualification are chosen by candidates from the offered dropdown. Some candidates happen to choose "OTHERS" option instead of choosing the University/Institute/College name mentioned in drop down and type the name in an open text box as per their choice. This might be the reason for some of the University/Institute/College appearing more than once in the above report with slight differences in the name. The readers of the report are advised to refer the report accordingly.</p>
+                    <p>Source: <a href="https://www.natboard.edu.in/" target="_blank">https://www.natboard.edu.in/</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>© 2025 RK Overseas Education. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="recommendationModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn">×</button>
+            <h3>✨ Recommended Universities ✨</h3>
+            <div id="recommendationResults">
+                <p>Loading recommendations...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="visaInterviewModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn visa-modal-close-btn">×</button>
+            <h3>✨ Visa Interview Assistant ✨</h3>
+            <p style="text-align: center; margin-bottom: 20px; color: #555;">Ask me any visa interview question, and I'll give you a helpful tip or suggested answer.</p>
+            <textarea id="visaQuestionInput" placeholder="E.g., Why do you want to study in [Country Name]? What are your plans after graduation?"></textarea>
+            <button class="btn btn-primary" id="generateVisaTipBtn" style="width: auto; margin: 0 auto 20px auto; display: block;">Get AI Tip</button>
+            <div class="visa-tips-output" id="visaTipsOutput">
+                Your AI-generated tip will be here.
+            </div>
+        </div>
+    </div>
+
+    <div id="essaySOPModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn essay-modal-close-btn">×</button>
+            <h3>✨ Essay/SOP Assistant ✨</h3>
+            <div class="mode-selection">
+                <button id="brainstormModeBtn" class="active">Brainstorm Ideas</button>
+                <button id="reviewModeBtn">Review Essay</button>
+            </div>
+            <textarea id="essaySOPInput" placeholder="Describe your topic for brainstorming, or paste your essay draft here..."></textarea>
+            <button class="btn btn-primary" id="generateEssaySOPBtn" style="width: auto; margin: 0 auto 20px auto; display: block;">Get AI Assistance</button>
+            <div class="essay-sop-output" id="essaySOPOutput">
+                Your AI-generated content or feedback will appear here.
+            </div>
+        </div>
+    </div>
+
+    <div id="preDepartureChecklistModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close-btn checklist-modal-close-btn">×</button>
+            <h3>✨ Pre-Departure Checklist Generator ✨</h3>
+            <div class="input-group">
+                <label for="checklistCountryInput">Destination Country:</label>
+                <input type="text" id="checklistCountryInput" placeholder="E.g., Russia, Georgia" required>
+            </div>
+            <div class="input-group">
+                <label for="checklistNotesInput">Any specific needs or considerations? (e.g., bringing family, specific medical needs)</label>
+                <textarea id="checklistNotesInput" placeholder="E.g., Traveling with spouse and child, need advice on cold weather packing."></textarea>
+            </div>
+            <button class="btn btn-primary" id="generateChecklistBtn" style="width: auto; margin: 0 auto 20px auto; display: block;">Generate Checklist</button>
+            <div class="checklist-output" id="checklistOutput">
+                Your personalized pre-departure checklist will appear here.
+            </div>
+        </div>
+    </div>
+
+    <!-- Your JavaScript file must be linked here, at the end of the body -->
+    <script>
+
+    </script>
+
+</body>
+
+</html>
